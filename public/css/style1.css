@@ -1,0 +1,389 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+.navbar-custom{
+  background: transparent;
+}
+
+.head{
+
+  width: 100%;
+  height: 100vh;
+  background: red;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header-clip{
+    background: #2E274F;
+
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: -999;
+    -webkit-clip-path: polygon(0 0, 37% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 37% 0, 100% 100%, 0% 100%);
+}
+.header .left-box, .header .right-box{
+    height: 100vh;
+}
+.header .left{
+    text-align: center;
+    color:white;
+    position: absolute;
+    max-width: 1000px;
+    top:55%;
+    left:40%;
+    transform: translate(-50%,-50%);
+}
+
+.left h1 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.header .btn-custom{
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding:0.4em 2em;
+
+}
+.header .btn-custom:hover{
+    background: white;
+    color: black;
+    border: 1px solid white;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.head-low {
+  position: absolute;
+  bottom: 35vh;
+  right: 5vh;
+}
+
+.img-head {
+    margin-left: 5em;
+    margin-top: 3em;
+    width: 300px;
+}
+
+.img-head-next {
+  width: 75%;
+}
+
+/* about style */
+.about{
+    margin:2em;
+    margin-bottom:5em;
+
+
+}
+.about .desc{
+    margin-top:1em;
+    text-align: justify;
+}
+.desc p{
+  font-size: 17px;
+}
+
+.about-sm {
+  text-align: center;
+}
+
+.img-about {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*CONTAINER-FLUID*/
+
+
+/*HOME STYLE*/
+.navbar-toggle {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.bg-home1{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -999;
+    top:0;
+    left:0;
+    background:url('../img/1_home.png');
+    background-size:100% 100%;
+}
+.bg-home2{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background:url('../img/2_home.png');
+    background-size:100% 100%;
+}
+
+/*LOGIN STYLE*/
+
+.bg-login{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background:url('../img/1_home.png');
+    background-size:100% 100%;
+
+}
+.bg-user{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background:url('../img/2_home.png');
+    background-size:100% 100%;
+
+}
+.login-box {
+    margin-top:8em;
+    margin-bottom: 4em;
+}
+.user-box{
+    margin-top:8em;
+    margin-bottom: 4em;
+}
+.login-box .left{
+    background: #2E274F;
+    padding:2em;
+
+}
+.user-box .left{
+    background: #0e202e;
+    padding:2em;
+
+}
+.login-box .left .desc{
+    margin-top:3em;
+    color: #EFF0F1;
+}
+.user-box .left .desc{
+    margin-top:3em;
+    color: #EFF0F1;
+}
+
+.login-box .left .desc h1{
+    color: #BE4EA1;
+    font-size: 1.4em;
+
+}
+.user-box .left .desc h1{
+    color: #BE4EA1;
+    font-size: 1.4em;
+
+}
+.login-box .right{
+    background: #DCDCDC;
+    padding:3em 3em;;
+
+}
+.user-box .right{
+    background: #DCDCDC;
+    padding:3em 3em;;
+
+}
+.login-box .right label{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #242729;
+}
+.user-box .right label{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #242729;
+}
+ .login-box .right input{
+    background:#A7A5B2;
+    border-radius: 5px;
+    height: 30px;
+}
+.user-box .right input{
+    background:#A7A5B2;
+    border-radius: 5px;
+    height: 30px;
+}
+.user-box .right textarea{
+    background:#A7A5B2;
+    border-radius: 5px;
+}
+.login-box .right input:focus{
+    border-color:#2E274F;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #2E274F;
+    outline: 0 none;
+}
+.user-box .right input:focus{
+    border-color:#0e202e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #0e202e;
+    outline: 0 none;
+}
+.user-box .right textarea:focus{
+    border-color:#0e202e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #0e202e;
+    outline: 0 none;
+}
+.login-box .right span{
+    text-align: center;
+    display: block;
+    font-size:0.8em;
+    font-weight: bold;
+    color: #242729;
+}
+.user-box .right span{
+    text-align: center;
+    display: block;
+    font-size:0.8em;
+    font-weight: bold;
+    color: #242729;
+}
+
+.login-box .right a{
+    color:#2E274F;
+}
+.user-box .right a{
+    color:#0e202e;
+}
+.login-box .right .btn-custom{
+    margin-top: 0.5em;
+    background-color:#2E274F;
+    color: #EFF0F1;
+    padding: 0.2em;
+    width: 30%;
+    border-radius: 10px;
+}
+.user-box .right .btn-custom{
+    margin-top: 0.5em;
+    background-color:#0e202e;
+    color: #EFF0F1;
+    padding: 0.2em;
+    width: 30%;
+    align: center;
+    border-radius: 10px;
+}
+/*REGISTER STYLE*/
+
+#navbarTop{
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+}
+#navbarTop.navbar-custom {
+   background:transparent;
+}
+
+#navbarTop.navbar-custom a{
+  color: black;
+}
+
+
+
+
+
+@media only screen and (max-width: 576px) { 
+    .contest-icon{
+        display: none;
+    }
+ 
+ }
+
+
+=======
+@media (max-width: 768px) {
+
+ 
+
+    .bg-login{
+        background-size:cover;
+        }
+
+    #navbarTop{
+            padding: none;
+        }
+
+    .cp-info .right-content{
+        display: none;
+    }
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { ... }
+
+
+
+.main{
+    margin-top:100px;
+}
+/* style from prili */
+input[type="radio"] {
+  margin-bottom: 0;
+  width: auto;
+}
+form .form-control {
+  border-radius: 0.25rem;
+}
+.btn-dark {
+  background-color: #2e274f;
+  border-color: #2e274f;
+  opacity: .9;
+}
+.btn-dark:hover {
+  background-color: #2e274f;
+  border-color: #2e274f;
+  opacity: 1;
+}
+.far,.fas {
+  font-size: 3em;
+  margin: .2em 0;
+}
+.forms .tab-group .active a {
+  border-top: 3px solid transparent;
+  position: relative;
+}
+.forms .tab-group .active a::after {
+  content: '';
+  border-top:15px solid white;
+  border-bottom:15px solid transparent;
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  left: 50%;
+  position: absolute;
+  top:100%;
+  transform: translateX(-50%);
+}
+
+.bg-dark {
+    background-color: #1f004a!important;
+}

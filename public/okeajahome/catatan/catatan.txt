@@ -1,0 +1,3 @@
+assets => untuk tampilan index, login, registrasi
+assets2 => untuk tampilan kategori
+assets 3 => untuk tampilan deskripsi objek
